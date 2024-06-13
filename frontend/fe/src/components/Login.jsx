@@ -57,9 +57,12 @@ function Login() {
                                         <input type='password' className='w-[70%] h-7 text-center rounded-xl' placeholder='Confirm Password' value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} />
                                     </>
                                 )}
-                                <button className='bg-gray-700 w-[25%]  h-aut0 text-white rounded-lg hover:font-bold' type='submit'>{isRegistering ? 'Register' : 'Login'}</button>
+                                <div className='flex justify-center pr-10 pt-3'>
+                                <button className='bg-gray-700 w-[25%]  h-8 text-white rounded-lg  hover:font-bold ' type='submit'>{isRegistering ? 'Register' : 'Login'}</button>
+                                </div>
                             </form>
-                            <div className='pt-4 flex justify-end pr-6 space-x-1'>
+
+                            <div className='pt-4 pl-16 space-x-1'>
                                 
                                 <button className='hover:text-red-500 pb-3' onClick={toggleMode}>{isRegistering ? 'Back to Login' : 'Not Registered?Create account'}</button>
                             </div>
